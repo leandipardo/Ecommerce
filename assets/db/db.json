@@ -2,6 +2,7 @@
   "camperas": [
     {
       "id": 1,
+      "tipo": "campera",
       "nombre": "Nike Urbano",
       "descripcion": "Campera Nike Modelo Urbano",
       "stock": 10,
@@ -14,6 +15,7 @@
     },
     {
       "id": 2,
+      "tipo": "campera",
       "nombre": "Nike Street",
       "descripcion": "Campera Nike Modelo Street",
       "stock": 10,
@@ -26,6 +28,7 @@
     },
     {
       "id": 3,
+      "tipo": "campera",
       "nombre": "Nike Suite",
       "descripcion": "Campera Nike Modelo Suite",
       "stock": 10,
@@ -38,6 +41,7 @@
     },
     {
       "id": 4,
+      "tipo": "campera",
       "nombre": "Nike Snow",
       "descripcion": "Campera Nike Modelo Snow",
       "stock": 10,
@@ -50,6 +54,7 @@
     },
     {
       "id": 5,
+      "tipo": "campera",
       "nombre": "Nike Squire",
       "descripcion": "Campera Nike Modelo Squire",
       "stock": 10,
@@ -62,6 +67,7 @@
     },
     {
       "id": 6,
+      "tipo": "campera",
       "nombre": "Nike Pappucho",
       "descripcion": "Campera Nike Modelo Pappucho",
       "stock": 10,
