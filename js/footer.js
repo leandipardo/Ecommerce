@@ -1,12 +1,13 @@
+import scroll from "./scrollBar.js";
 const d = document,
   $footer = d.querySelector("footer"),
+  $body = d.querySelector("body"),
   $footerText = [
     "Argentina.",
     "©Di Pardo. Todos los derechos reservados.",
     "Términos y Condiciones",
     "Política de privacidad y cookies",
   ];
-
 export default function footer() {
   let $footerRedes = [
     {
@@ -30,14 +31,11 @@ export default function footer() {
       nombre: "twitter",
     },
   ];
-
   let $sectionRedes = d.createElement("section"),
     $informacion = d.createElement("section"),
     $fragment = d.createDocumentFragment();
-
-  $sectionRedes.classList.add("redes");
-
-  $footerRedes.forEach((el) => {
+    $sectionRedes.classList.add("redes");
+    $footerRedes.forEach((el) => {
     const $a = d.createElement("a"),
       $i = d.createElement("i");
     $a.setAttribute("href", el.url);
@@ -49,7 +47,6 @@ export default function footer() {
     $sectionRedes.appendChild($clone);
   });
   const $ul = d.createElement("ul");
-
   $footerText.forEach((el) => {
     const $li = d.createElement("li");
     $li.innerHTML = `<p>${el}</p>`;
@@ -57,8 +54,15 @@ export default function footer() {
     $ul.insertAdjacentElement("beforeend", $clone);
   });
   $informacion.appendChild($ul);
-
   $fragment.appendChild($informacion);
   $fragment.appendChild($sectionRedes);
   $footer.appendChild($fragment);
+
+  let $scrollContainer = d.createElement("section"),
+  $scroll = d.createElement("div");
+  $scrollContainer.classList.add("scrollbarContainer");
+  $scroll.classList.add("scrollbar");
+  $body.appendChild($scrollContainer);
+  $scrollContainer.appendChild($scroll);
+  scroll();
 }

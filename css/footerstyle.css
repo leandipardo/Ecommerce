@@ -1,19 +1,51 @@
+::-webkit-scrollbar{
+  display: none;
+}
 footer {
   height: fit-content;
   width: 100vw;
   background: var(--light-dark);
+  color:var(--white);
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.redes {
-  position: relative;
+.redes{
+  gap: 1rem;
   display: flex;
-  background-color: yellow;
   width: fit-content;
+  font-size: 2rem;
   align-items: center;
 }
-.redes a {
-  color: black;
+.redes a{
+  color: inherit;
 }
-.redes i {
-  font-size: 2rem;
-  margin: 0.5rem;
+.redes a i{
+  opacity: .8;
+  transition: .5s ease;
+}
+.redes a i:hover{
+  opacity: 1;
+}
+footer ul{
+  margin: 1rem 0;
+  justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style-type: none;
+}
+.scrollbarContainer{
+  position: fixed;
+  top: calc(100vh - 5px);
+  height: 5px;
+  width: 100vw;
+  z-index: 10;
+}
+.scrollbar{
+  transition: .3s ease-out;
+  border-radius: 0 5px 5px 0;
+  height: 3px;
+  background-color: var(--light-dark);
+  outline: 1px dashed var(--white);
 }
