@@ -5,7 +5,6 @@ export default function home() {
   let json;
   const $main = d.querySelector("main");
   const success = (json) => {
-    console.log(json);
     const Arr = json;
     Arr.forEach((el) => {
       const $div = d.createElement("div");
