@@ -1,15 +1,224 @@
-[
-  {
-    "camperas": {
-      "campera1": {
-        "foto1": "./assets/camperas/campera1-1",
-        "foto2": "./assets/camperas/campera1-2",
-        "foto3": "./assets/camperas/campera1-3",
-        "foto4": "./assets/camperas/campera1-4",
-        "foto5": "./assets/camperas/campera1-5"
-      }
+{
+  "camperas": [
+    {
+      "id": 1,
+      "nombre": "Nike Urbano",
+      "descripcion": "Campera Nike Modelo Urbano",
+      "stock": 10,
+      "precio": 1999,
+      "foto1": "./assets/camperas/campera1-1.webp",
+      "foto2": "./assets/camperas/campera1-2.webp",
+      "foto3": "./assets/camperas/campera1-3.webp",
+      "foto4": "./assets/camperas/campera1-4.webp",
+      "foto5": "./assets/camperas/campera1-4.webp"
     },
-    "pantalones": {},
-    "zapatillas": {}
-  }
-]
+    {
+      "id": 2,
+      "nombre": "Nike Street",
+      "descripcion": "Campera Nike Modelo Street",
+      "stock": 10,
+      "precio": 1499,
+      "foto1": "./assets/camperas/campera2-1.webp",
+      "foto2": "./assets/camperas/campera2-2.webp",
+      "foto3": "./assets/camperas/campera2-3.webp",
+      "foto4": "./assets/camperas/campera2-4.webp",
+      "foto5": "./assets/camperas/campera2-5.webp"
+    },
+    {
+      "id": 3,
+      "nombre": "Nike Suite",
+      "descripcion": "Campera Nike Modelo Suite",
+      "stock": 10,
+      "precio": 2499,
+      "foto1": "./assets/camperas/campera3-1.webp",
+      "foto2": "./assets/camperas/campera3-2.webp",
+      "foto3": "./assets/camperas/campera3-3.webp",
+      "foto4": "./assets/camperas/campera3-4.webp",
+      "foto5": "./assets/camperas/campera3-5.webp"
+    },
+    {
+      "id": 4,
+      "nombre": "Nike Snow",
+      "descripcion": "Campera Nike Modelo Snow",
+      "stock": 10,
+      "precio": 1299,
+      "foto1": "./assets/camperas/campera4-1.webp",
+      "foto2": "./assets/camperas/campera4-2.webp",
+      "foto3": "./assets/camperas/campera4-3.webp",
+      "foto4": "./assets/camperas/campera4-4.webp",
+      "foto5": "./assets/camperas/campera4-5.webp"
+    },
+    {
+      "id": 5,
+      "nombre": "Nike Squire",
+      "descripcion": "Campera Nike Modelo Squire",
+      "stock": 10,
+      "precio": 999,
+      "foto1": "./assets/camperas/campera5-1.webp",
+      "foto2": "./assets/camperas/campera5-2.webp",
+      "foto3": "./assets/camperas/campera5-3.webp",
+      "foto4": "./assets/camperas/campera5-4.webp",
+      "foto5": "./assets/camperas/campera5-5.webp"
+    },
+    {
+      "id": 6,
+      "nombre": "Nike Pappucho",
+      "descripcion": "Campera Nike Modelo Pappucho",
+      "stock": 10,
+      "precio": 5999,
+      "foto1": "./assets/camperas/campera6-1.webp",
+      "foto2": "./assets/camperas/campera6-2.webp",
+      "foto3": "./assets/camperas/campera6-3.webp",
+      "foto4": "./assets/camperas/campera6-4.webp",
+      "foto5": "./assets/camperas/campera6-5.webp"
+    }
+  ],
+  "pantalones": [
+    {
+      "id": 1,
+      "nombre": "Nike Urbano",
+      "descripcion": "Pantalon Nike Modelo Urbano",
+      "stock": 10,
+      "precio": 1999,
+      "foto1": "./assets/pantalones/pantalon1-1.webp",
+      "foto2": "./assets/pantalones/pantalon1-2.webp",
+      "foto3": "./assets/pantalones/pantalon1-3.webp",
+      "foto4": "./assets/pantalones/pantalon1-4.webp",
+      "foto5": "./assets/pantalones/pantalon1-4.webp"
+    },
+    {
+      "id": 2,
+      "nombre": "Nike Street",
+      "descripcion": "Pantalon Nike Modelo Street",
+      "stock": 10,
+      "precio": 1499,
+      "foto1": "./assets/pantalones/pantalon2-1.webp",
+      "foto2": "./assets/pantalones/pantalon2-2.webp",
+      "foto3": "./assets/pantalones/pantalon2-3.webp",
+      "foto4": "./assets/pantalones/pantalon2-4.webp",
+      "foto5": "./assets/pantalones/pantalon2-5.webp"
+    },
+    {
+      "id": 3,
+      "nombre": "Nike Suite",
+      "descripcion": "Pantalon Nike Modelo Suite",
+      "stock": 10,
+      "precio": 2499,
+      "foto1": "./assets/pantalones/pantalon3-1.webp",
+      "foto2": "./assets/pantalones/pantalon3-2.webp",
+      "foto3": "./assets/pantalones/pantalon3-3.webp",
+      "foto4": "./assets/pantalones/pantalon3-4.webp",
+      "foto5": "./assets/pantalones/pantalon3-5.webp"
+    },
+    {
+      "id": 4,
+      "nombre": "Nike Snow",
+      "descripcion": "Pantalon Nike Modelo Snow",
+      "stock": 10,
+      "precio": 1299,
+      "foto1": "./assets/pantalones/pantalon4-1.webp",
+      "foto2": "./assets/pantalones/pantalon4-2.webp",
+      "foto3": "./assets/pantalones/pantalon4-3.webp",
+      "foto4": "./assets/pantalones/pantalon4-4.webp",
+      "foto5": "./assets/pantalones/pantalon4-5.webp"
+    },
+    {
+      "id": 5,
+      "nombre": "Nike Squire",
+      "descripcion": "Pantalon Nike Modelo Squire",
+      "stock": 10,
+      "precio": 999,
+      "foto1": "./assets/pantalones/pantalon5-1.webp",
+      "foto2": "./assets/pantalones/pantalon5-2.webp",
+      "foto3": "./assets/pantalones/pantalon5-3.webp",
+      "foto4": "./assets/pantalones/pantalon5-4.webp",
+      "foto5": "./assets/pantalones/pantalon5-5.webp"
+    },
+    {
+      "id": 6,
+      "nombre": "Nike Pappucho",
+      "descripcion": "Pantalon Nike Modelo Pappucho",
+      "stock": 10,
+      "precio": 5999,
+      "foto1": "./assets/pantalones/pantalon6-1.webp",
+      "foto2": "./assets/pantalones/pantalon6-2.webp",
+      "foto3": "./assets/pantalones/pantalon6-3.webp",
+      "foto4": "./assets/pantalones/pantalon6-4.webp",
+      "foto5": "./assets/pantalones/pantalon6-5.webp"
+    }
+  ],
+  "zapatillas": [
+    {
+      "id": 1,
+      "nombre": "Nike Urbano",
+      "descripcion": "Zapatilla Nike Modelo Urbano",
+      "stock": 10,
+      "precio": 1999,
+      "foto1": "./assets/zapatillas/zapatilla1-1.webp",
+      "foto2": "./assets/zapatillas/zapatilla1-2.webp",
+      "foto3": "./assets/zapatillas/zapatilla1-3.webp",
+      "foto4": "./assets/zapatillas/zapatilla1-4.webp",
+      "foto5": "./assets/zapatillas/zapatilla1-4.webp"
+    },
+    {
+      "id": 2,
+      "nombre": "Nike Street",
+      "descripcion": "Zapatilla Nike Modelo Street",
+      "stock": 10,
+      "precio": 1499,
+      "foto1": "./assets/zapatillas/zapatilla2-1.webp",
+      "foto2": "./assets/zapatillas/zapatilla2-2.webp",
+      "foto3": "./assets/zapatillas/zapatilla2-3.webp",
+      "foto4": "./assets/zapatillas/zapatilla2-4.webp",
+      "foto5": "./assets/zapatillas/zapatilla2-5.webp"
+    },
+    {
+      "id": 3,
+      "nombre": "Nike Suite",
+      "descripcion": "Zapatilla Nike Modelo Suite",
+      "stock": 10,
+      "precio": 2499,
+      "foto1": "./assets/zapatillas/zapatilla3-1.webp",
+      "foto2": "./assets/zapatillas/zapatilla3-2.webp",
+      "foto3": "./assets/zapatillas/zapatilla3-3.webp",
+      "foto4": "./assets/zapatillas/zapatilla3-4.webp",
+      "foto5": "./assets/zapatillas/zapatilla3-5.webp"
+    },
+    {
+      "id": 4,
+      "nombre": "Nike Snow",
+      "descripcion": "Zapatilla Nike Modelo Snow",
+      "stock": 10,
+      "precio": 1299,
+      "foto1": "./assets/zapatillas/zapatilla4-1.webp",
+      "foto2": "./assets/zapatillas/zapatilla4-2.webp",
+      "foto3": "./assets/zapatillas/zapatilla4-3.webp",
+      "foto4": "./assets/zapatillas/zapatilla4-4.webp",
+      "foto5": "./assets/zapatillas/zapatilla4-5.webp"
+    },
+    {
+      "id": 5,
+      "nombre": "Nike Squire",
+      "descripcion": "Zapatilla Nike Modelo Squire",
+      "stock": 10,
+      "precio": 999,
+      "foto1": "./assets/zapatillas/zapatilla5-1.webp",
+      "foto2": "./assets/zapatillas/zapatilla5-2.webp",
+      "foto3": "./assets/zapatillas/zapatilla5-3.webp",
+      "foto4": "./assets/zapatillas/zapatilla5-4.webp",
+      "foto5": "./assets/zapatillas/zapatilla5-5.webp"
+    },
+    {
+      "id": 6,
+      "nombre": "Nike Pappucho",
+      "descripcion": "Zapatilla Nike Modelo Pappucho",
+      "stock": 10,
+      "precio": 5999,
+      "foto1": "./assets/zapatillas/zapatilla6-1.webp",
+      "foto2": "./assets/zapatillas/zapatilla6-2.webp",
+      "foto3": "./assets/zapatillas/zapatilla6-3.webp",
+      "foto4": "./assets/zapatillas/zapatilla6-4.webp",
+      "foto5": "./assets/zapatillas/zapatilla6-5.webp"
+    }
+  ]
+}
