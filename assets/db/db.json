@@ -220,5 +220,79 @@
       "foto4": "./assets/zapatillas/zapatilla6-4.webp",
       "foto5": "./assets/zapatillas/zapatilla6-5.webp"
     }
+  ],
+  "modelos": [
+    {
+      "id": 1,
+      "nombre": "Nike Urbano",
+      "descripcion": "Nike Modelo Urbano",
+      "stock": 10,
+      "precio": 1999,
+      "foto1": "./assets/modelos/modelo1-1.webp",
+      "foto2": "./assets/modelos/modelo1-2.webp",
+      "foto3": "./assets/modelos/modelo1-3.webp",
+      "foto4": "./assets/modelos/modelo1-4.webp",
+      "foto5": "./assets/modelos/modelo1-4.webp"
+    },
+    {
+      "id": 2,
+      "nombre": "Nike Street",
+      "descripcion": "Nike Modelo Street",
+      "stock": 10,
+      "precio": 1499,
+      "foto1": "./assets/modelos/modelo2-1.webp",
+      "foto2": "./assets/modelos/modelo2-2.webp",
+      "foto3": "./assets/modelos/modelo2-3.webp",
+      "foto4": "./assets/modelos/modelo2-4.webp",
+      "foto5": "./assets/modelos/modelo2-5.webp"
+    },
+    {
+      "id": 3,
+      "nombre": "Nike Suite",
+      "descripcion": "Nike Modelo Suite",
+      "stock": 10,
+      "precio": 2499,
+      "foto1": "./assets/modelos/modelo3-1.webp",
+      "foto2": "./assets/modelos/modelo3-2.webp",
+      "foto3": "./assets/modelos/modelo3-3.webp",
+      "foto4": "./assets/modelos/modelo3-4.webp",
+      "foto5": "./assets/modelos/modelo3-5.webp"
+    },
+    {
+      "id": 4,
+      "nombre": "Nike Snow",
+      "descripcion": "Nike Modelo Snow",
+      "stock": 10,
+      "precio": 1299,
+      "foto1": "./assets/modelos/modelo4-1.webp",
+      "foto2": "./assets/modelos/modelo4-2.webp",
+      "foto3": "./assets/modelos/modelo4-3.webp",
+      "foto4": "./assets/modelos/modelo4-4.webp",
+      "foto5": "./assets/modelos/modelo4-5.webp"
+    },
+    {
+      "id": 5,
+      "nombre": "Nike Squire",
+      "descripcion": "Nike Modelo Squire",
+      "stock": 10,
+      "precio": 999,
+      "foto1": "./assets/modelos/modelo5-1.webp",
+      "foto2": "./assets/modelos/modelo5-2.webp",
+      "foto3": "./assets/modelos/modelo5-3.webp",
+      "foto4": "./assets/modelos/modelo5-4.webp",
+      "foto5": "./assets/modelos/modelo5-5.webp"
+    },
+    {
+      "id": 6,
+      "nombre": "Nike Pappucho",
+      "descripcion": "Nike Modelo Pappucho",
+      "stock": 10,
+      "precio": 5999,
+      "foto1": "./assets/modelos/modelo6-1.webp",
+      "foto2": "./assets/modelos/modelo6-2.webp",
+      "foto3": "./assets/modelos/modelo6-3.webp",
+      "foto4": "./assets/modelos/modelo6-4.webp",
+      "foto5": "./assets/modelos/modelo6-5.webp"
+    }
   ]
 }
