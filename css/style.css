@@ -7,7 +7,12 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
+:root{
+  --light-white: rgb(245, 245, 245);
+  --white: white;
+  --light-dark: rgb(17, 17, 17);
+  --dark: black;
+}
 main {
   display: grid;
   gap: 1rem;
