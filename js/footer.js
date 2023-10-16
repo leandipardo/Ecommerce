@@ -38,8 +38,8 @@ export default function footer() {
   $sectionRedes.classList.add("redes");
 
   $footerRedes.forEach((el) => {
-    const $a = d.createElement("a");
-    const $i = d.createElement("i");
+    const $a = d.createElement("a"),
+      $i = d.createElement("i");
     $a.setAttribute("href", el.url);
     $a.setAttribute("target", "_blank");
     $i.className = el.icon;
