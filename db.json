@@ -1,0 +1,15 @@
+[
+  {
+    "camperas": {
+      "campera1": {
+        "foto1": "./assets/camperas/campera1-1",
+        "foto2": "./assets/camperas/campera1-2",
+        "foto3": "./assets/camperas/campera1-3",
+        "foto4": "./assets/camperas/campera1-4",
+        "foto5": "./assets/camperas/campera1-5"
+      }
+    },
+    "pantalones": {},
+    "zapatillas": {}
+  }
+]
