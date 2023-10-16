@@ -1,19 +1,19 @@
-footer{
-    height: fit-content;
-    width: 100vw;
-    background-color: var(--light-dark);
+footer {
+  height: fit-content;
+  width: 100vw;
+  background: var(--light-dark);
 }
-.redes{
-    position: relative;
-    display: flex;
-    background-color: yellow;
-    width: fit-content;
-    align-items: center;
+.redes {
+  position: relative;
+  display: flex;
+  background-color: yellow;
+  width: fit-content;
+  align-items: center;
 }
-.redes a{
-    color: black;
+.redes a {
+  color: black;
 }
-.redes i{
-    font-size: 2rem;
-    margin: .5rem;
+.redes i {
+  font-size: 2rem;
+  margin: 0.5rem;
 }
