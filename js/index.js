@@ -6,9 +6,6 @@ const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
   home();
-<<<<<<< HEAD
   footer();
-=======
   header();
->>>>>>> f5110f018ae1eb0462b60e969ed6ef2b5a771814
 });
