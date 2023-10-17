@@ -6,6 +6,7 @@ export default function searchFilter() {
       $arr = d.querySelectorAll(".contenedor-productos");
 
     if (e.target === $searchBar) {
+      e.preventDefault();
       let string = $searchBar.value;
       $arr.forEach((el) => {
         const $h2 = el.childNodes[5].textContent.toLowerCase();
