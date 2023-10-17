@@ -29,6 +29,7 @@ export default function header() {
   });
 
   $search.setAttribute("type", "input");
+  $search.classList.add("nav-search");
   $search.setAttribute("name", "nav-busqueda");
   $search.setAttribute("placeholder", "Buscar Articulo");
 
