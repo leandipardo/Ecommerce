@@ -1,12 +1,15 @@
+import categorias from "./categorias.js";
+
 const d = document;
 
 export default function home() {
   let res;
   let json;
-  const $main = d.querySelector("main");
+  const $main = d.querySelector("main"),
+    $section = d.createElement("section");
+  $section.classList.add("seccion-productos");
   const success = (json) => {
-    const Arr = json;
-    Arr.forEach((el) => {
+    json.forEach((el) => {
       const $div = d.createElement("div");
       $div.classList.add("contenedor-productos");
       $div.innerHTML = `
@@ -22,17 +25,18 @@ export default function home() {
       <h3>$${el.precio}</h3>
 
       `;
-      $main.appendChild($div);
+      $section.appendChild($div);
     });
+    $main.appendChild($section);
   };
 
   const error = (x) => {
-    console.log("falle papa");
+    $main.innerHTML = `Lo siento, no fue posible cargar el elemento: ${x.status} : ${x.statusText}`;
   };
 
-  const getProductos = async () => {
+  const getProductos = async (categoria) => {
     try {
-      res = await fetch("http://localhost:5550/camperas");
+      res = await fetch(`http://localhost:5550/${categoria}`);
       json = await res.json();
       if (!res.ok) throw { status: res.status, statusText: res.statusText };
       success(json);
@@ -40,11 +44,14 @@ export default function home() {
       error(err);
     }
   };
-  getProductos();
+  categorias($main);
+  getProductos("camperas");
+  getProductos("pantalones");
+  getProductos("zapatillas");
 }
 
 d.addEventListener("click", (e) => {
   if (e.target.matches(".imagen-producto")) {
-    e.target.classList.add("activo");
+    e.target.classList.toggle("activo");
   }
 });

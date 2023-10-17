@@ -10,27 +10,8 @@
   box-sizing: border-box;
 }
 body {
+  background-image: url("../assets/img/fondo.jpg");
+  background-size: cover;
   width: 100vw;
   height: 100vh;
-}
-main {
-  display: grid;
-  gap: 1rem;
-  background: #ccc;
-  grid-auto-rows: 22rem;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-}
-
-.contenedor-productos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 1rem 0;
-}
-
-.imagen-producto {
-  min-height: 200px;
-  max-height: 400px;
 }

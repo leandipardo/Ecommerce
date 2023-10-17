@@ -53,6 +53,13 @@
   animation: selected 0.2s linear 0s forwards;
 }
 
+::placeholder {
+  padding-left: 1rem;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 @keyframes selected {
   100% {
     transform: scale(1.2);
