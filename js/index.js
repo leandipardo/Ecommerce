@@ -9,5 +9,5 @@ d.addEventListener("DOMContentLoaded", (e) => {
   home();
   footer();
   header();
-  searchFilter();
+  searchFilter("");
 });
