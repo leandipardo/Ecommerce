@@ -17,9 +17,9 @@ main {
   position: sticky;
   top:0;
   z-index: 10;
-  box-shadow: 0px -12px 89px 2px rgba(0,0,0,0.86);
-  -webkit-box-shadow: 0px -12px 89px 2px rgba(0,0,0,0.86);
-  -moz-box-shadow: 0px -12px 89px 2px rgba(0,0,0,0.86);
+  box-shadow: 0px 0px 89px 35px rgba(0,0,0,0.86);
+  -webkit-box-shadow: 0px 0px 89px 35px rgba(0,0,0,0.86);
+  -moz-box-shadow: 0px 0px 89px 35px rgba(0,0,0,0.86);
 }
 .seccion-categorias ul{
   list-style: none;
@@ -31,11 +31,13 @@ main {
 .seccion-categorias ul li{
   text-align: center;
   height: 5rem;
+  filter: opacity(.5);
 }
 .seccion-categorias ul li:hover{
-  transition: background-color 1s ease;
+  transition: background-color 1s ease,filter 1s ease-in;
   background-color: white;
   box-shadow: inset 0px 22px 57px 30px black;
+  filter: opacity(1);
 }
 .seccion-categorias ul li a{
   position: relative;
