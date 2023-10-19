@@ -7,6 +7,7 @@
 
 .navbar {
   display: flex;
+  flex-flow: row wrap;
   text-align: center;
   align-items: center;
   width: 100vw;
@@ -20,13 +21,13 @@
 .nav-logo-contenedor {
   padding: 1rem 0;
   cursor:default;
-  width: 20%;
+  width: fit-content;
   height: 100%;
 }
 
 .nav-logo {
   font-weight: 700;
-  margin-top: 0.5rem;
+  margin: 0.5rem 20%;
   font-size: 2rem;
   color: var(--light-white);
 }
@@ -39,15 +40,17 @@
   border: solid 3px black;
   background-color: rgb(124, 124, 124);
   padding-left: 1rem;
-  width: 15%;
+  min-width: fit-content;
+  width: 5%;
   transition: 1s ease;
   border-radius: 15px;
+  filter: opacity(.7);
 }
 .navbar input:focus{
-  background-color: var(--light-dark);
+  background-color: var(--light-white);
   outline: 0px;
   width: 30%;
-  filter: invert();
+  filter: opacity(1);
 }
 
 .navbar ul {
@@ -79,5 +82,5 @@
   font-family: "Roboto";
   font-size: 1rem;
   font-weight: 400;
-  color: var(--light-white);
+  color: var(--light-dark);
 }
