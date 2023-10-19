@@ -4,7 +4,24 @@ export default function searchFilter(filter) {
   const search = (arr, filtro) => {
     arr.forEach((el) => {
       const text = el.childNodes[5].textContent.toLowerCase();
-      if (text.includes(filtro)) {
+      const array1 = text.split(" ");
+      filtro = filtro.toLowerCase();
+      const array2 = filtro.split(" ");
+      if (array2[array2.length - 1] === "") {
+        array2.pop();
+      }
+      let arrFinal = [];
+
+      array1.filter((word) =>
+        array2.forEach((el) => {
+          if (word.includes(el)) {
+            arrFinal.push(word);
+          }
+        })
+      );
+      console.log(array2);
+      console.log(arrFinal);
+      if (arrFinal.length >= array2.length) {
         el.setAttribute("style", "display: flex");
       } else {
         el.setAttribute("style", "display: none");
@@ -13,10 +30,10 @@ export default function searchFilter(filter) {
   };
 
   d.addEventListener("keyup", (e) => {
-    filter = "";
-    const $searchBar = d.querySelector(".nav-search"),
-      $arr = d.querySelectorAll(".contenedor-productos");
+    const $searchBar = d.querySelector(".nav-search");
     if (e.target === $searchBar) {
+      filter = "";
+      const $arr = d.querySelectorAll(".contenedor-productos");
       e.preventDefault();
       search($arr, $searchBar.value);
     }
