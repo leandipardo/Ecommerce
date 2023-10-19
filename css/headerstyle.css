@@ -8,63 +8,76 @@
 .navbar {
   display: flex;
   text-align: center;
-  justify-content: space-evenly;
   align-items: center;
-  max-width: 100vw;
-  padding: 1rem;
-  height: 5rem;
+  width: 100vw;
+  min-height: 5rem;
+  max-height: fit-content;
   color: var(--light-white);
+  background-color: var(--light-dark);
+  justify-content: center;
 }
 
 .nav-logo-contenedor {
+  padding: 1rem 0;
+  cursor:default;
   width: 20%;
   height: 100%;
-}
-.nav-logo-contenedor input{
-  border-radius: 0;
 }
 
 .nav-logo {
   font-weight: 700;
   margin-top: 0.5rem;
   font-size: 2rem;
-  color: var(--light-dark);
+  color: var(--light-white);
 }
 
 .navbar input {
   align-items: center;
-  width: 50%;
   height: 2rem;
   font-weight: 400;
   margin-top: 2px;
   border: solid 3px black;
+  background-color: rgb(124, 124, 124);
   padding-left: 1rem;
+  width: 15%;
+  transition: 1s ease;
+  border-radius: 15px;
+}
+.navbar input:focus{
+  background-color: var(--light-dark);
+  outline: 0px;
+  width: 30%;
+  filter: invert();
 }
 
 .navbar ul {
   width: 30%;
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  flex-flow: row wrap;
+  justify-content:center;
+  align-items: baseline;
+  text-align: left;
   gap: 1em;
 }
-
+.navbar ul li{
+  transition: transform .05s ease-in;
+}
 .navbar ul li a {
   text-decoration: none;
-  color: var(--light-dark);
+  color: var(--light-white);
+  transition: transform .1s ease-in;
+  font-weight: 900;
+  font-variant-caps:titling-caps;
+  font-size: 1.5rem;
 }
 .navbar ul li:hover {
-  animation: selected 0.2s linear 0s forwards;
+  transform: scale(1.1);
 }
 
-::placeholder {
+::placeholder{
   font-family: "Roboto";
   font-size: 1rem;
   font-weight: 400;
-}
-
-@keyframes selected {
-  100% {
-    transform: scale(1.2);
-  }
+  color: var(--light-white);
 }

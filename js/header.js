@@ -1,7 +1,7 @@
 const d = document,
   $header = d.querySelector("header"),
   nombre = "Adidas INK",
-  menus = ["Inicio", "Productos", "Nosotros", "Contacto"];
+  menus = ["INICIO", "PRODUCTOS", "NOSOTROS", "CONTACTO"];
 
 export default function header() {
   const $logoContenedor = d.createElement("div"),

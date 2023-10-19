@@ -33,6 +33,7 @@ main {
   height: 5rem;
 }
 .seccion-categorias ul li:hover{
+  transition: background-color 1s ease;
   background-color: white;
   box-shadow: inset 0px 22px 57px 33px black;
 }
@@ -47,10 +48,10 @@ main {
 .seccion-productos {
   margin: 0 1rem;
   align-self: center;
-  max-width: 80%;
+  width: 80%;
+  min-height: 100vh;
   display: grid;
-  backdrop-filter: blur(14px);
-  background-color: rgba(19, 19, 19, 0.425);
+  background: linear-gradient(270deg, rgba(235,245,255,0) 2%, rgba(0,0,0,1) 19%, rgba(0,0,0,1) 77%, rgba(0,0,0,0) 97%);
   grid-auto-rows: 22rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
@@ -78,11 +79,11 @@ main {
   width: 80%;
 }
 .imagen-producto {
-  border: var(--light-dark) 5px solid;
   width: 80%;
   min-height: 200px;
   max-height: 400px;
   cursor: pointer;
+  filter: drop-shadow(0 -6px 20px rgba(255, 255, 255, 0.527))brightness(.9);;
 }
 
 .activo {
