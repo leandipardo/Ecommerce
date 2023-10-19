@@ -17,16 +17,16 @@ main {
   position: sticky;
   top:0;
   z-index: 10;
-  box-shadow: 0px 0px 89px 35px rgba(0,0,0,0.86);
-  -webkit-box-shadow: 0px 0px 89px 35px rgba(0,0,0,0.86);
-  -moz-box-shadow: 0px 0px 89px 35px rgba(0,0,0,0.86);
+  box-shadow: 0px 0px 89px 35px var(--light-dark);
+  -webkit-box-shadow: 0px 0px 89px 35px var(--light-dark);
+  -moz-box-shadow: 0px 0px 89px 35px var(--light-dark);
 }
 .seccion-categorias ul{
   list-style: none;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  background-color: var(--dark);
+  background-color: var(--light-dark);
 }
 .seccion-categorias ul li{
   text-align: center;
