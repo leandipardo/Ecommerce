@@ -31,7 +31,7 @@ export default function header() {
   $search.setAttribute("type", "input");
   $search.classList.add("nav-search");
   $search.setAttribute("name", "nav-busqueda");
-  $search.setAttribute("placeholder", "Buscar Articulo");
+  $search.setAttribute("placeholder", "Buscar un articulo.");
 
   $nav.appendChild($logoContenedor);
   $nav.appendChild($search);

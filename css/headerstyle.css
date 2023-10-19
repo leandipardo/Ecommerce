@@ -20,6 +20,9 @@
   width: 20%;
   height: 100%;
 }
+.nav-logo-contenedor input{
+  border-radius: 0;
+}
 
 .nav-logo {
   font-weight: 700;
@@ -33,8 +36,9 @@
   width: 50%;
   height: 2rem;
   font-weight: 400;
-  border-radius: 7px;
   margin-top: 2px;
+  border: solid 3px black;
+  padding-left: 1rem;
 }
 
 .navbar ul {
@@ -54,7 +58,6 @@
 }
 
 ::placeholder {
-  padding-left: 1rem;
   font-family: "Roboto";
   font-size: 1rem;
   font-weight: 400;

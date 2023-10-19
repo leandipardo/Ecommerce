@@ -6,10 +6,10 @@ export default function categorias(section) {
   section.innerHTML = `
   <div class="seccion-categorias">
   <ul>
-  <li class="categoria"><a href="#" alt="campera">Camperas</a></li>
-  <li class="categoria"><a href="#" alt="pantalon">Pantalones</a></li>
-  <li class="categoria"><a href="#" alt="zapatilla">Zapatillas</a></li>
-  <li class="categoria"><a href="#" alt="modelo">Modelos</a></li>
+  <li class="categoria"><a href="#" alt="campera">CAMPERAS</a></li>
+  <li class="categoria"><a href="#" alt="pantalon">PANTALONES</a></li>
+  <li class="categoria"><a href="#" alt="zapatilla">ZAPATILLAS</a></li>
+  <li class="categoria"><a href="#" alt="modelo">MODELOS</a></li>
   </ul>
   </div>
   `;

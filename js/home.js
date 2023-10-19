@@ -13,7 +13,7 @@ export default function home() {
       const $div = d.createElement("div");
       $div.classList.add("contenedor-productos");
       $div.innerHTML = `
-      <h2>${el.nombre}</h2>
+      <h3>${el.nombre}</h3>
       <img
       src=${el.foto1} 
       data-tipo="${el.tipo}" 
@@ -21,8 +21,8 @@ export default function home() {
       class="imagen-producto"
       alt="${el.tipo + el.id}"
       >
-      <h3>${el.descripcion}</h3>
-      <h3>$${el.precio}</h3>
+      <h4>${el.descripcion}</h4>
+      <h4>$${el.precio}</h4>
 
       `;
       $section.appendChild($div);
