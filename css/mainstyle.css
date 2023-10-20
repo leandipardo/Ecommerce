@@ -29,6 +29,7 @@ main {
   background-color: var(--light-dark);
 }
 .seccion-categorias ul li{
+  width: 25%;
   text-align: center;
   height: 5rem;
   filter: opacity(.5);
@@ -36,8 +37,9 @@ main {
 .seccion-categorias ul li:hover{
   transition: background-color 1s ease,filter 1s ease-in;
   background-color: white;
-  box-shadow: inset 0px 22px 57px 30px black;
-  filter: opacity(1);
+  box-shadow: inset 0px 60px 60px 35px var(--light-dark),0px 37px 123px 0px var(--light-dark) inset;
+  filter: opacity(1)brightness(.9);
+
 }
 .seccion-categorias ul li a{
   position: relative;
