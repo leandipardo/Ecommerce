@@ -90,8 +90,8 @@
       "foto1": "./assets/pantalones/pantalon1-1.webp",
       "foto2": "./assets/pantalones/pantalon1-2.webp",
       "foto3": "./assets/pantalones/pantalon1-3.webp",
-      "foto4": "./assets/pantalones/pantalon1-4.webp",
-      "foto5": "./assets/pantalones/pantalon1-4.webp"
+      "foto4": "./assets/pantalones/pantalon1-3.webp",
+      "foto5": "./assets/pantalones/pantalon1-3.webp"
     },
     {
       "id": 2,
@@ -104,7 +104,7 @@
       "foto2": "./assets/pantalones/pantalon2-2.webp",
       "foto3": "./assets/pantalones/pantalon2-3.webp",
       "foto4": "./assets/pantalones/pantalon2-4.webp",
-      "foto5": "./assets/pantalones/pantalon2-5.webp"
+      "foto5": "./assets/pantalones/pantalon2-4.webp"
     },
     {
       "id": 3,
@@ -117,7 +117,7 @@
       "foto2": "./assets/pantalones/pantalon3-2.webp",
       "foto3": "./assets/pantalones/pantalon3-3.webp",
       "foto4": "./assets/pantalones/pantalon3-4.webp",
-      "foto5": "./assets/pantalones/pantalon3-5.webp"
+      "foto5": "./assets/pantalones/pantalon3-4.webp"
     },
     {
       "id": 4,
@@ -130,7 +130,7 @@
       "foto2": "./assets/pantalones/pantalon4-2.webp",
       "foto3": "./assets/pantalones/pantalon4-3.webp",
       "foto4": "./assets/pantalones/pantalon4-4.webp",
-      "foto5": "./assets/pantalones/pantalon4-5.webp"
+      "foto5": "./assets/pantalones/pantalon4-4.webp"
     },
     {
       "id": 5,
