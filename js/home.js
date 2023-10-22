@@ -70,8 +70,23 @@ export default function home() {
     const $body = d.querySelector("body");
     const $tarjetaActiva = d.querySelector(".activo");
     if ($tarjetaActiva) {
-      $tarjetaActiva.parentNode.removeChild($tarjetaActiva);
-      $body.classList.remove("stop-scrolling");
+      if (
+        !(
+          e.target.matches(".show-producto") ||
+          e.target.matches(".show-producto *")
+        )
+      ) {
+        $tarjetaActiva.parentNode.removeChild($tarjetaActiva);
+        $body.classList.remove("stop-scrolling");
+      } else {
+        if (e.target.matches(".row-imagen")) {
+          const $imgClicked = e.target;
+          const $img1 = d.querySelector(".imagen1");
+          const $url = $img1.getAttribute("src");
+          $img1.setAttribute("src", $imgClicked.getAttribute("src"));
+          $imgClicked.setAttribute("src", $url);
+        }
+      }
     } else {
       if (e.target.matches(".contenedor-productos *")) {
         const $tarjeta = e.target.parentNode;
@@ -98,7 +113,7 @@ export default function home() {
                   const $li = d.createElement("li");
                   const $img = d.createElement("img");
                   $img.setAttribute("src", x[claves[i]]);
-                  $img.className = `imagen${cont}`;
+                  $img.className = `row-imagen imagen${cont}`;
                   $img.setAttribute("alt", claves[i]);
                   $li.appendChild($img);
                   $rows.className = `row row${cont - 1}`;
