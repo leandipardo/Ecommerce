@@ -19,8 +19,6 @@ export default function searchFilter(filter) {
           }
         })
       );
-      console.log(array2);
-      console.log(arrFinal);
       if (arrFinal.length >= array2.length) {
         el.setAttribute("style", "display: flex");
       } else {
