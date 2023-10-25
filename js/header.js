@@ -1,7 +1,8 @@
 const d = document,
   $header = d.querySelector("header"),
   nombre = "Adidas INK",
-  menus = ["INICIO", "PRODUCTOS", "NOSOTROS", "CONTACTO"];
+  menus = ["INICIO", "PRODUCTOS", "NOSOTROS", "CARRITO"],
+  enlaces=["index.html","productos.html","nosotros.html","carrito.html"];
 
 export default function header() {
   const $logoContenedor = d.createElement("div"),
@@ -20,9 +21,9 @@ export default function header() {
   $logo.innerText = `${nombre}`;
   $logoContenedor.appendChild($logo);
 
-  menus.forEach((el) => {
+  menus.forEach((el, i) => {
     $a.innerHTML = `<p>${el}</p>`;
-    $a.setAttribute("href", el);
+    $a.setAttribute("href", enlaces[i]);
     $li.insertAdjacentElement("beforeend", $a);
     let $clone = $li.cloneNode($li, true);
     $ul.appendChild($clone);

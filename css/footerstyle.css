@@ -7,7 +7,6 @@ footer {
   background: var(--light-dark);
   color:var(--white);
   display:flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 .redes{
@@ -37,7 +36,7 @@ footer ul{
 }
 .scrollbarContainer{
   position: fixed;
-  top: calc(100vh - 5px);
+  bottom: 0px;
   height: 5px;
   width: 100vw;
   z-index: 10;

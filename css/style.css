@@ -12,12 +12,12 @@
 body {
   background-size: cover;
   width: 100vw;
-  height: 100vh;
+  height: max-content;
+  overflow-x: hidden;
 }
 .flyer{
   width: 100vw;
   height: auto;
   background-color: black;
   outline: solid 5px  black;
-
 }

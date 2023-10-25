@@ -10,14 +10,14 @@ main {
   flex-flow: column nowrap;
   justify-content: space-between;
   background-image: url("../assets/img/fondo.jpg");
-  background-size: 100%;
+  background-size: 1920px;
   color: var(--light-white);
 }
 
 .seccion-categorias {
   width: 100vw;
   height: max-content;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 10;
   box-shadow: 0px 0px 89px 35px var(--light-dark);
@@ -37,7 +37,7 @@ main {
   filter: opacity(0.5);
 }
 .seccion-categorias ul li:hover {
-  transition: background-color 1s ease, filter 1s ease-in;
+  transition: background-color .5s ease, filter 1s ease-in;
   background-color: white;
   box-shadow: inset 0px 60px 60px 35px var(--light-dark),0px 37px 123px 0px var(--light-dark) inset;
   filter: opacity(1)brightness(.9);
@@ -95,6 +95,7 @@ main {
   min-height: 200px;
   max-height: 400px;
   filter: drop-shadow(0 -6px 20px rgba(255, 255, 255, 0.527)) brightness(0.9);
+
 }
 
 .activo {
@@ -120,6 +121,7 @@ section {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   text-align: center;
+  backdrop-filter: blur(10px);
 }
 
 .home-text h1 {
@@ -165,7 +167,7 @@ section {
 
 .home-img img {
   max-width: 100%;
-  border-radius: 5%;
+  border-radius: 5% 0 0 5%;
 }
 
 .main {

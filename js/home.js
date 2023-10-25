@@ -50,7 +50,7 @@ export default function home() {
   const error = (x) => {
     $main.innerHTML = `Lo siento, no fue posible cargar el elemento: ${x.status} : ${x.statusText}`;
   };
-
+  
   const getProductos = async (categoria, success, error) => {
     try {
       res = await fetch(`http://localhost:5550/${categoria}`);
@@ -65,7 +65,6 @@ export default function home() {
   getProductos("camperas", success, error);
   getProductos("pantalones", success, error);
   getProductos("zapatillas", success, error);
-
   d.addEventListener("click", (e) => {
     const $body = d.querySelector("body");
     const $tarjetaActiva = d.querySelector(".activo");

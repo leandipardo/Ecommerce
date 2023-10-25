@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nosotros.css">
+    <title>Nosotros</title>
+</head>
+<body>
+<main>
+    <br><br><br><br><br>
+    <h1>Quiénes Somos</h1>
+    <p>En Nikedidas, nos apasiona la moda y la expresión personal. Desde nuestros inicios, hemos estado comprometidos en ofrecer prendas de alta calidad que reflejen el estilo y la individualidad de nuestros clientes.</p>
+    <br><br>
+    <p>Fundada en 1982, nuestra empresa de ropa se ha convertido en un referente en la industria de la moda. Comenzamos como un pequeño negocio con una visión: brindar a las personas la oportunidad de lucir con confianza y estilo. A lo largo de los años, hemos crecido y evolucionado, manteniendo siempre nuestros valores fundamentales de calidad y diseño.</p>
+    <h2>Nuestra Misión</h2>
+    <p>Nuestra misión es vestir a las personas con prendas de moda de alta calidad que inspiren confianza y expresen su autenticidad. Nos esforzamos por brindar productos excepcionales y un servicio al cliente impecable.</p>
+    <h2>Equipo</h2>
+    <p>Detrás de cada prenda que creamos hay un equipo apasionado de diseñadores, artesanos y amantes de la moda. Nuestro equipo trabaja incansablemente para ofrecer productos excepcionales y mantenerse a la vanguardia de las tendencias.</p>
+    <h2>Contacto</h2>
+    <p>Estamos aquí para ti. Si deseas conocer más sobre nosotros o tienes alguna pregunta, no dudes en contactarnos en <a href="https://www.facebook.com/nike/">facebook</a> <a href="https://www.instagram.com/Nike">instagram</a> o <a href="https://twitter.com/Nike">tiwtter</a></p>
+</main>
+    <svg>
+        <defs>
+          <pattern id="img1" patternUnits="userSpaceOnUse" width="100" height="200">
+            <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAADICAIAAACRXtOWAAADQUlEQVR4nO3Uy3HrMBQEUb1cHADzX9EROKR5C7v8kWlpRiKJC6A7gltTB7is63qp18vLi+p1WZal9TIbrevaepmN/rWeZaNlWd7e3lpfcd3r62vrE7aqyariE1yWpfUsG9X82WFlB6sgWLnBKghWbrAKgpUbrIJg5QarIFi5wSoIVm6wCoKVG6yCYOUGqyBYucEqCFZusAqClRusgmDlBqsgWLnBKghWbrAKgpUbrIJg5QarIFi5wSoIVm6wCoKVG6yCYOUGqyBYucEqCFZusAqClRusgmDlBqsgWLnBKghWbrAKgpUbrIJg5QarIFi5wSoIVm6wCoKVG6yCYOUGqyBYucEqCFZusAqClRusgmDlBqsgWLnBKghWbrAKgpUbrIJg5QarIFi5wSoIVm6wCoKVG6yCYOUGqyBYucEqCFZusAqClRusgmAV1HqWjWqyWpal4lg1Wa3rWm6ssqwklRurLCtVG6syK1UbqzIrlRqrOCuVGqs4K9UZqz4r1RmrPisVGasLVioyVhesVGGsXlipwli9sFLzsTpipeZjdcRKbcfqi5XajtUXKzUcqztWajhWd6zUaqweWanVWD2yUpOxOmWlJmN1ykrnj9UvK50/Vr+sdPJYXbPSyWN1zUpnjtU7K505Vu+sdNpYA7DSaWMNwErnjDUGK50z1hisdMJYw7DSCWMNw0pHjzUSKx091kisdOhYg7HSoWMNxkrHjTUeKx031nisdNBYQ7LSQWMNyUpHjDUqKx0x1qistPtYA7PS7mMNzEr7jjU2K+071tistONYw7PSjmMNz0p7jTUDK+011gystMtYk7DSLmNNwkrPjzUPKz0/1jys9ORYU7HSk2NNxUrPjDUbKz0z1mys9PBYE7LSw2NNyEqPjTUnKz021pys9MBY07LSA2NNy0rpWDOzUjrWzKwUjTU5K0VjTc5K/liwkj8WrGSOBav3rLFg9d79sWD12f2xYPXZnbFg9b07Y8Hqe7fGgtVVt8aC1VV/jgWr3/05Fqx+tz0WrDbbHgtWm22MBau/2hgLVn91PRasbnQ9Fqxu9GMsWN3ux1iwut3XWLC629dYsLrbx1iwcvoYC1ZOF8HK7iJY2f0HmTYOVR+4YhkAAAAASUVORK5CYII=" x="0" y="0" width="100" height="200" />
+          </pattern>
+        </defs>
+        <path fill="url(#img1)"></path>
+      </svg>
+      <script>
+        var WIDTH = window.innerWidth;
+        var HEIGHT = window.innerHeight;
+        var WAVEHEIGHT = 60;
+        var FREQUENCY = 200;
+        var SPEED = 4;
+        
+        let xs = [];
+        let tick = 0;
+        
+        function createWave() {
+          for (var i = 0; i <= WIDTH; i++) {
+            xs.push(i);
+          }
+        }
+        createWave();
+        
+        function animate() {
+          let points = xs.map(x => {
+            let y = HEIGHT / 2 + WAVEHEIGHT * Math.sin((x + tick) / FREQUENCY);
+            return [x, y];
+          });
+        
+          let path =
+            "M" +
+            points
+              .map(p => {
+                return p[0] + "," + p[1];
+              })
+              .join(" L") +
+            "L " +
+            WIDTH +
+            "," +
+            HEIGHT +
+            " L " +
+            0 +
+            "," +
+            HEIGHT +
+            " Z";
+        
+          document.querySelector("path").setAttribute("d", path);
+          tick += SPEED;
+          requestAnimationFrame(animate);
+        }
+        
+        animate();
+        
+        window.addEventListener("resize", function() {
+          WIDTH = window.innerWidth;
+          HEIGHT = window.innerHeight;
+          xs = [];
+          createWave();
+        });
+        </script>
+</body>
+</html>
